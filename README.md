@@ -19,3 +19,15 @@ A második a kommentek automatikusabb kezelése. A bővítmény automatikusan ki
 A harmadik a jobb dizájn. Ide tartoznak fontos, sokak által kért dolgok, mint a kommentmező mérete, betűmérete, ugyanakkor a kommentek betűi kisebbek lettek az eredeti feleslegesen nagyhoz képest. Van továbbá sok apróbb igazítás mindenfelé, például a kapcsolódó cikkek jobban elválnak a valódi tartalomtól, feleslegesen nagy térközök megszűntek, a válaszok egymásba ágyazása korrektebb, és a bővítmény kiszűr pár nem különösebben kívánatos, felugró és beugró és betüremkedő és zavaró ezt-azt is. A saját kommenteknél a név kékkel kiemelve, kicsit könnyebb így végignézni, és új reagálásokat keresni alatta.
 
 Megjelenik továbbá a jobb felső sarokban két új bíborszínű gomb. Az első a kommentekhez ugrik, a második a saját hozzászólások oldalát nyitja meg. Az utóbbi továbbra is olyan, amilyen, de legalább könnyebb így elérni.
+
+## Telepítés
+
+A korábbival ellentétben ez nem GreaseMonkey, hanem egy teljesen önálló böngészőbővítmény. Egyelőre nyilván nem a szokásos boltokban (Chrome Webstore), hanem itt, ami kézzel való telepítést jelent. Nincs összecsomagolva, aláírva, egyelőre nézzük meg, hogy működik, mi a vélemény a gyakorlatban, szóljon bele mindenki más is, aztán majd meglátjuk...
+
+Úgyhogy, most csak az próbálja ki, akinek a fejlesztői módban telepítés nem okoz gondot. *Bővítmények kezelése* a böngészőben, *Fejlesztői mód* bekapcsolva, a kódot akárhova letölteni, kicsomagolni, onnan telepíteni.
+
+A bővítménynek szokásos módon van *Beállítások* ablaka az ikonon megjelenő menüben, ott lehet a letiltásokat kezelni. Ha be van pipálva, hogy egyáltalán szükséges (alapállapotban igen), akkor megjelennek a piros X-ek a hozzászólások mellett, egyébként nem. A letiltottak listája is itt jelenik meg, egyesével visszaengedhető mindenki, vagy az egész egyben törölhető, exportálható és importálható, ahogy Triacus szkriptjéből át van emelve most.
+
+## Megjegyzések
+
+Egyelőre most a kijelölt trollokat nem eltünteti, hanem elhalványítja, erről kérnék véleményt. Ugyanis, az új Mandiner egymásba ágyazza a kommenteket, a válasz az eredeti hozzászólás része, ha tehát rögtön a felsőt eltüntetnénk, akkor minden ráadott válasz is eltűnne, ami nem feltétlenül az, amit szeretnénk. Így, halványan kevésbé zavaróak, viszont mégis foglalják a helyet. Ki kellene találnunk, hogy mi legyen...
