@@ -30,4 +30,4 @@ A bővítménynek szokásos módon van *Beállítások* ablaka az ikonon megjele
 
 ## Megjegyzések
 
-Egyelőre most a kijelölt trollokat nem eltünteti, hanem elhalványítja, erről kérnék véleményt. Ugyanis, az új Mandiner egymásba ágyazza a kommenteket, a válasz az eredeti hozzászólás része, ha tehát rögtön a felsőt eltüntetnénk, akkor minden ráadott válasz is eltűnne, ami nem feltétlenül az, amit szeretnénk. Így, halványan kevésbé zavaróak, viszont mégis foglalják a helyet. Ki kellene találnunk, hogy mi legyen...
+Egyelőre most a kijelölt trollokat nem eltünteti, hanem elhalványítja, hogy jobban meg tudjuk figyelni, jól működik-e.
