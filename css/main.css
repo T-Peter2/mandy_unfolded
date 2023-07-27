@@ -90,8 +90,9 @@
   @media (min-width: 768px) {
 
     app-article-my-comments .article-card-left,
+    .embedly-card,
     .recommendation-block {
-      margin-left: 10em !important;
+      padding-left: 10em !important;
       margin-bottom: 0em !important;
     }
   }
