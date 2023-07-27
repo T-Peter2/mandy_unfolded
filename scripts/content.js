@@ -31,6 +31,7 @@ function hideAllDisabledUsers() {
     var name = findName.childNodes[0].textContent.trim();
     if (name === ownName) {
       findName.classList.add('mandy-unfolded-own');
+      findName.after(createNextButton());
     }
     else if (hideDisabledUsers) {
       if (disabledUsers.includes(name)) {
@@ -39,6 +40,28 @@ function hideAllDisabledUsers() {
       else {
         findName.after(createDisableButton(name));
       }
+    }
+  }
+}
+
+function createNextButton() {
+  var button = document.createElement('button');
+  button.innerText = '▼';
+  button.classList.add('mandy-unfolded-next-comment');
+  button.setAttribute('title', 'Következő');
+  button.onclick = () => nextOwnComment();
+  return button;
+}
+
+function nextOwnComment() {
+  var findComments = document.querySelectorAll('man-comment-card:not(.mandy-unfolded-visited)');
+  for (let comment of findComments) {
+    var findName = comment.querySelector('div.comment-card-name');
+    var name = findName.childNodes[0].textContent.trim();
+    if (name === ownName) {
+      comment.classList.add('mandy-unfolded-visited');
+      findName.scrollIntoView();
+      return;
     }
   }
 }
