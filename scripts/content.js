@@ -24,7 +24,7 @@ function loadMore() {
 
 function hideAllDisabledUsers() {
   ownName = document.querySelector('span.font-username-bold')?.textContent.trim() ?? '';
-  var findComments = document.querySelectorAll('app-comment-card-container:not(.mandy-unfolded-processed)');
+  var findComments = document.querySelectorAll('man-comment-card:not(.mandy-unfolded-processed)');
   for (let comment of findComments) {
     comment.classList.add('mandy-unfolded-processed');
     var findName = comment.querySelector('div.comment-card-name');
@@ -44,7 +44,7 @@ function hideAllDisabledUsers() {
 }
 
 function hideSingleUser(userName) {
-  var findComments = document.querySelectorAll('app-comment-card-container');
+  var findComments = document.querySelectorAll('man-comment-card');
   for (let comment of findComments) {
     var findName = comment.querySelector('div.comment-card-name');
     var name = findName.childNodes[0].textContent.trim();
