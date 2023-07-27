@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <title>Beállítások</title>
+  <style>
+    .mandy-green-button {
+      padding: 0.5em;
+      margin: 1em 0;
+      background-color: green;
+      border: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .mandy-orange-button {
+      padding: 0.5em;
+      margin: 1em 0;
+      background-color: orange;
+      border: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .mandy-green-status {
+      padding: 0;
+      margin: 0.5em 0;
+      font-style: italic;
+    }
+
+    .mandy-unfolded-enable-user {
+      border: 1px solid white;
+      background-color: green;
+      color: white;
+      padding: 0.1em 0.25em;
+      margin-right: 0.5em;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Mandy Unfolded beállításai</h1>
+
+  <h2>Elnémított felhasználók</h2>
+
+  <ul id="disabled_users"></ul>
+
+  <label>
+    <input type="checkbox" id="hide_disabled_users" />Elnémított felhasználók elrejtése
+  </label>
+
+  <p>Kikapcsolva a tiltófunkció nem működik, a piros X-ek nem jelennek meg, de a tiltott felhasználók listája megmarad
+    és bármikor újra bekapcsolható.</p>
+
+  <div>
+    <button id="enable_all" class="mandy-green-button">✓ Összes felhasználó engedélyezése</button>
+    <button id="import" class="mandy-orange-button">📂 Importálás</button>
+    <button id="export" class="mandy-orange-button">💾 Exportálás</button>
+  </div>
+
+  <div id="status" class="mandy-green-status"></div>
+  <button id="save">Mentés</button>
+
+  <script src="settings.js"></script>
+</body>
+
+</html>

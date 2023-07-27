@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Mandy Unfolded",
+  "version": "1.0.0",
+  "description": "A használhatóbb Mandiner",
+  "author": "triacus, sakamoto, T. Péter",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://mandiner.hu/*"
+      ],
+      "js": [
+        "scripts/content.js"
+      ],
+      "css": [
+        "css/main.css",
+        "css/ads.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": [
+    "storage"
+  ],
+  "options_page": "settings/settings.html",
+  "icons": {
+    "16": "icons/mandy16.png",
+    "64": "icons/mandy64.png",
+    "128": "icons/mandy128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; connect-src 'self'"
+  }
+}

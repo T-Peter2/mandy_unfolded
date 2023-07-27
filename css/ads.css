@@ -1,0 +1,11 @@
+  man-header-magazine,
+  kesma-advertisement-adocean,
+  .free-display-inventory-wrapper,
+  .newsletter-diverter-card-article,
+  .newsletter-diverter-card-layout,
+  .article-bottom-social-interaction,
+  .trending-topics,
+  .facebook-popup,
+  .recommendation-block-external {
+    display: none !important;
+  }
