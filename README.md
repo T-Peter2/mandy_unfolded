@@ -16,6 +16,8 @@ A legnépszerűbb nyilván a trolltartó.
 
 A második a kommentek automatikusabb kezelése. A bővítmény automatikusan kibontja a válaszkommenteket, magától megnyomja a Továbbiak betöltése gombot. Ezeket a lépéseket időzítve újra és újra elvégzi a háttérben, hogy a kommentmező alapvetően a normális fórumozásnak megfelelően működjön. Ez az időzítés szükségszerűen néha kis ugrándozással, sorok kis mozgolódásával jár, ahogy kibontódnak, ezzel cserébe együtt kell élni.
 
+A saját hozzászólások mellett nem X jelenik meg, hanem egy kék nyíl lefele. Megnyomásával az adott cikk alatt található következő saját hozzászólásra ugrik, így követhetőbbek lennének a reakciók. Jelenleg csak egyszer megy végig egy topikon, az újrázáshoz frissíteni kell előtte az oldalt.
+
 A harmadik a jobb dizájn. Ide tartoznak fontos, sokak által kért dolgok, mint a kommentmező mérete, betűmérete, ugyanakkor a kommentek betűi kisebbek lettek az eredeti feleslegesen nagyhoz képest. Van továbbá sok apróbb igazítás mindenfelé, például a kapcsolódó cikkek jobban elválnak a valódi tartalomtól, feleslegesen nagy térközök megszűntek, a válaszok egymásba ágyazása korrektebb, és a bővítmény kiszűr pár nem különösebben kívánatos, felugró és beugró és betüremkedő és zavaró ezt-azt is. A saját kommenteknél a név kékkel kiemelve, kicsit könnyebb így végignézni, és új reagálásokat keresni alatta.
 
 Megjelenik továbbá a jobb felső sarokban két új bíborszínű gomb. Az első a kommentekhez ugrik, a második a saját hozzászólások oldalát nyitja meg. Az utóbbi továbbra is olyan, amilyen, de legalább könnyebb így elérni.
