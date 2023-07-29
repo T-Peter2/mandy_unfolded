@@ -167,14 +167,20 @@
     cursor: pointer;
   }
 
+  @media (max-width: 575.98px) {
+    .header-comments {
+      padding: 10px;
+      width: 38px;
+      height: 38px;
+    }
+  }
+
   .header-comments:hover {
     background-color: var(--kui-blue-200);
   }
 
-  @media (max-width: 1199.98px) {
-    .header-comments-button-desktop {
-      display: none;
-    }
+  .header-comments-button-mobile {
+    display: none;
   }
 
   .header-comments-button-desktop {
@@ -186,6 +192,10 @@
   }
 
   @media (max-width: 1199.98px) {
+    .header-comments-button-desktop {
+      display: none;
+    }
+
     .header-comments-button-mobile {
       display: flex;
       align-items: center;
@@ -193,10 +203,6 @@
       height: 100%;
       width: 100%;
     }
-  }
-
-  .header-comments-button-mobile {
-    display: none;
   }
 
   .header-comments .icon-mandiner-hamburger-user,
