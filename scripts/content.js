@@ -66,6 +66,17 @@ function nextOwnComment() {
   }
 }
 
+function firstOwnComment() {
+  var findComments = document.querySelectorAll('man-comment-card');
+  for (let comment of findComments) {
+    var findName = comment.querySelector('div.comment-card-name');
+    var name = findName.childNodes[0].textContent.trim();
+    if (name === ownName) {
+      return comment;
+    }
+  }
+}
+
 function hideSingleUser(userName) {
   var findComments = document.querySelectorAll('man-comment-card');
   for (let comment of findComments) {
@@ -128,7 +139,10 @@ searchButton.after(ownButton);
 
 var jumpButton = createHeaderButton('folder-open-white');
 jumpButton.onclick = () => {
-  var comments = document.querySelector('app-comment-section');
-  comments.scrollIntoView()
+  var comment = firstOwnComment();
+  if (comment == undefined) {
+    comment = document.querySelector('app-comment-section');
+  }
+  comment.scrollIntoView();
 };
 searchButton.after(jumpButton);
