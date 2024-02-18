@@ -12,7 +12,7 @@ Ennek a bővítménynek három előzménye van:
 
 Csomagoljuk hát össze a hármat egy, remélhetőleg sok problémánkat megoldó csomagba. Az integrált szolgáltatások tehát:
 
-A legnépszerűbb nyilván a trolltartó. Egyelőre most a kijelölt trollokat nem eltünteti, hanem elhalványítja, hogy jobban meg tudjuk figyelni, jól működik-e. A saját hozzászólások mellett nem X jelenik meg, hanem egy kék nyíl lefele. Megnyomásával az adott cikk alatt található következő saját hozzászólásra ugrik, így követhetőbbek lennének a reakciók. Jelenleg csak egyszer megy végig egy topikon, az újrázáshoz frissíteni kell előtte az oldalt.
+A legnépszerűbb nyilván a trolltartó. A saját hozzászólások mellett nem X jelenik meg, hanem egy kék nyíl lefele. Megnyomásával az adott cikk alatt található következő saját hozzászólásra ugrik, így követhetőbbek lennének a reakciók. Jelenleg csak egyszer megy végig egy topikon, az újrázáshoz frissíteni kell előtte az oldalt.
 
 A második a kommentek automatikusabb kezelése. A bővítmény automatikusan kibontja a válaszkommenteket, magától megnyomja a Továbbiak betöltése gombot. Ezeket a lépéseket időzítve újra és újra elvégzi a háttérben, hogy a kommentmező alapvetően a normális fórumozásnak megfelelően működjön. Ez az időzítés szükségszerűen néha kis ugrándozással, sorok kis mozgolódásával jár, ahogy kibontódnak, ezzel cserébe együtt kell élni.
 
@@ -25,7 +25,7 @@ névvel és jelszóval (tehát a bővítménynek **nincs** tudomása a névről 
 teljesen automatikussá és hát mögöttivé tenni. A Mandiner ezek után jellemzően rossz oldalra irányít át, 404-es hiba, a bővítmény ezt is kezeli és automatikusan továbbmegy a helyes oldalra.
 
 Ha ismételten újra és újra bejelentkezik, akkor általában segít, ha a bejelentkezős oldalon megállva Ctrl+F5-tel (nem sima F5, Ctrl+R vagy az újratöltős gomb a címsor mellett) frissítjük az oldalt,
-ilyenkor gyarkan  a következő bejelentkezés már sikeres lesz. Persze, a hiba a Mandinerben van, nem bennünk, úgyhogy garancia semmire nincsen. Többször az is segít, ha nem tartunk túl sok mandineres
+ilyenkor gyakran  a következő bejelentkezés már sikeres lesz. Persze, a hiba a Mandinerben van, nem bennünk, úgyhogy garancia semmire nincsen. Többször az is segít, ha nem tartunk túl sok mandineres
 oldalt egyszerre megnyitva, és főleg nem ugyanazt a cikket két fülön.
 
 ## Telepítés
@@ -35,3 +35,5 @@ A korábbival ellentétben ez nem GreaseMonkey, hanem egy teljesen önálló bö
 Úgyhogy, most csak az próbálja ki, akinek a fejlesztői módban telepítés nem okoz gondot. *Bővítmények kezelése* a böngészőben, *Fejlesztői mód* bekapcsolva, a kódot akárhova letölteni, kicsomagolni, onnan telepíteni.
 
 A bővítménynek szokásos módon van *Beállítások* ablaka az ikonon megjelenő menüben, ott lehet a letiltásokat kezelni. Ha be van pipálva, hogy egyáltalán szükséges (alapállapotban igen), akkor megjelennek a piros X-ek a hozzászólások mellett, egyébként nem. A letiltottak listája is itt jelenik meg, egyesével visszaengedhető mindenki, vagy az egész egyben törölhető, exportálható és importálható, ahogy Triacus szkriptjéből át van emelve most. A beállítások szándékosan úgy vannak, hogy a felhasználók kezelgetése után a végén a *Mentés* gombot meg kelljen nyomni, addig nem történik meg a változások átvezetése.
+
+Itt lehet azt is beállítani, hogy csak elhalványítsa a letiltott felhasználókat, vagy ténylegesen tüntesse el. Az előbbinek van egy apró előnye: mivel így a hozzászólás továbbra is elfoglalja a helyet, nem fognak a letiltás közben ugrálni a tételek. Az eltüntetésnél viszont igen, a helyére csúsznak a mögötte levők. Kinek melyik tetszik jobban...
