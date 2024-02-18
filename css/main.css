@@ -16,6 +16,10 @@
     margin: 10px 0 !important;
   }
 
+  .opinion-card-header-title {
+    font-stretch: 75% !important;
+  }
+
   .block-content .custom-text-style.quote,
   .block-content .keretes {
     min-height: 10px !important;
@@ -121,15 +125,17 @@
 
   .comment-card-sub {
     max-width: unset !important;
+    padding: 10px 0 0 10px !important;
   }
 
-  .comment-card-sub.ms-20px {
+  .comment-card-sub.ms-n10px {
     margin-left: 0px !important;
+    border-left: 1px solid var(--kui-gray-100);
   }
 
-  .comment-card-sub.ms-20px .ms-20px,
+  .comment-card-sub.ms-20px,
   .comment-card-sub.ms-n20px {
-    margin-left: -18px !important;
+    margin-left: 0px !important;
   }
 
   .social-left,
@@ -154,7 +160,7 @@
     opacity: 0.25 !important;
   }
 
-  .mandy-unfolded-own {
+  .mandy-unfolded-own a {
     color: blue !important;
   }
 
