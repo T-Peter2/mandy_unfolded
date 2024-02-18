@@ -1,4 +1,5 @@
 var hideDisabledUsers = true;
+var dimDisabledUsers = true;
 var disabledUsers = [];
 var ownName = '';
 
@@ -35,7 +36,8 @@ function hideAllDisabledUsers() {
     }
     else if (hideDisabledUsers) {
       if (disabledUsers.includes(name)) {
-        comment.classList.add('mandy-unfolded-disabled');
+        var disabledClass = dimDisabledUsers ? 'mandy-unfolded-dimmed' : 'mandy-unfolded-hidden';
+        comment.classList.add(disabledClass);
       }
       else {
         findName.after(createDisableButton(name));
@@ -83,7 +85,8 @@ function hideSingleUser(userName) {
     var findName = comment.querySelector('div.comment-card-name');
     var name = findName.childNodes[0].textContent.trim();
     if (name === userName) {
-      comment.classList.add('mandy-unfolded-processed', 'mandy-unfolded-disabled');
+      var disabledClass = dimDisabledUsers ? 'mandy-unfolded-dimmed' : 'mandy-unfolded-hidden';
+      comment.classList.add('mandy-unfolded-processed', disabledClass);
     }
   }
 }
@@ -135,8 +138,9 @@ const loadMoreInterval = setInterval(loadMore, 10000);
 const hideDisabledUserInterval = setInterval(hideAllDisabledUsers, 5000);
 const autoLoginUserInterval = setInterval(autoLoginUser, 3000);
 
-chrome.storage.local.get(['hideDisabledUsers', 'disabledUsers']).then((result) => {
+chrome.storage.local.get(['hideDisabledUsers', 'dimDisabledUsers', 'disabledUsers']).then((result) => {
   hideDisabledUsers = result.hideDisabledUsers ?? true;
+  dimDisabledUsers = result.dimDisabledUsers ?? true;
   disabledUsers = JSON.parse(result.disabledUsers ?? '[]');
 });
 
