@@ -1,11 +1,15 @@
   man-header-magazine,
+  mandiner-man-weekly-newspaper,
   kesma-advertisement-adocean,
+  kesma-branding-box-ex,
   .free-display-inventory-wrapper,
   .newsletter-diverter-card-article,
   .newsletter-diverter-card-layout,
+  .newsletter-diverter-card-popup,
   .article-bottom-social-interaction,
   .trending-topics,
   .facebook-popup,
+  .exit-popup,
   .recommendation-block-external {
     display: none !important;
   }
