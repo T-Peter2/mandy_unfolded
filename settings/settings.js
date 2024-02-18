@@ -2,18 +2,21 @@ var disabledUsers = [];
 
 const saveOptions = () => {
   const hideDisabledUsers = document.getElementById('hide_disabled_users').checked;
+  const dimDisabledUsers = document.getElementById('dim_disabled_users').checked;
 
   chrome.storage.local.set({
     disabledUsers: JSON.stringify(disabledUsers),
     hideDisabledUsers: hideDisabledUsers,
+    dimDisabledUsers: dimDisabledUsers,
   }).then(() => {
     showStatus('Lementve.');
   });
 };
 
 const restoreOptions = () => {
-  chrome.storage.local.get(['hideDisabledUsers', 'disabledUsers']).then((result) => {
+  chrome.storage.local.get(['hideDisabledUsers', 'dimDisabledUsers', 'disabledUsers']).then((result) => {
     document.getElementById('hide_disabled_users').checked = result.hideDisabledUsers ?? true;
+    document.getElementById('dim_disabled_users').checked = result.dimDisabledUsers ?? true;
     disabledUsers = JSON.parse(result.disabledUsers ?? '[]');
     displayUsers();
   });
