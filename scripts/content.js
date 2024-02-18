@@ -121,9 +121,19 @@ function createHeaderButton(icon) {
   return template.content.firstElementChild.cloneNode(true);
 }
 
+function autoLoginUser() {
+  var findLogin = document.querySelectorAll('button.btn-tertiary');
+  for (let button of findLogin) {
+    if (button.innerText === 'Bejelentkezés') {
+      button.click();
+    }
+  }
+}
+
 const unfoldInterval = setInterval(unfoldReplies, 1000);
 const loadMoreInterval = setInterval(loadMore, 10000);
 const hideDisabledUserInterval = setInterval(hideAllDisabledUsers, 5000);
+const autoLoginUserInterval = setInterval(autoLoginUser, 3000);
 
 chrome.storage.local.get(['hideDisabledUsers', 'disabledUsers']).then((result) => {
   hideDisabledUsers = result.hideDisabledUsers ?? true;
@@ -146,3 +156,18 @@ jumpButton.onclick = () => {
   comment.scrollIntoView();
 };
 searchButton.after(jumpButton);
+
+window.onload = function () {
+  if (location.href.endsWith("%23kommentek")) {
+    const url = location.href.split('%')[0]
+    window.location.replace(url);
+  }
+  else if (location.href.endsWith("#kommentek")) {
+    const url = location.href.split('#')[0]
+    window.location.replace(url);
+  }
+  else if (location.href.includes("utm_source")) {
+    const url = location.href.split('?')[0]
+    window.location.replace(url);
+  }
+}
