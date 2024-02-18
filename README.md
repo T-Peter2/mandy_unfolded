@@ -16,9 +16,17 @@ A legnépszerűbb nyilván a trolltartó. Egyelőre most a kijelölt trollokat n
 
 A második a kommentek automatikusabb kezelése. A bővítmény automatikusan kibontja a válaszkommenteket, magától megnyomja a Továbbiak betöltése gombot. Ezeket a lépéseket időzítve újra és újra elvégzi a háttérben, hogy a kommentmező alapvetően a normális fórumozásnak megfelelően működjön. Ez az időzítés szükségszerűen néha kis ugrándozással, sorok kis mozgolódásával jár, ahogy kibontódnak, ezzel cserébe együtt kell élni.
 
-A harmadik a jobb dizájn. Ide tartoznak fontos, sokak által kért dolgok, mint a kommentmező mérete, betűmérete, ugyanakkor a kommentek betűi kisebbek lettek az eredeti feleslegesen nagyhoz képest. Van továbbá sok apróbb igazítás mindenfelé, például a kapcsolódó cikkek jobban elválnak a valódi tartalomtól, feleslegesen nagy térközök megszűntek, a válaszok egymásba ágyazása korrektebb, és a bővítmény kiszűr pár nem különösebben kívánatos, felugró, beugró, betüremkedő és zavaró ezt-azt is. A saját kommenteknél a név kékkel kiemelve, kicsit könnyebb így végignézni és új reagálásokat keresni alatta.
+A harmadik a jobb dizájn. Ide tartoznak fontos, sokak által kért dolgok, mint a kommentmező mérete, betűmérete, ugyanakkor a kommentek betűi kisebbek lettek az eredeti feleslegesen nagyhoz képest. Van továbbá sok apróbb igazítás mindenfelé, például a kapcsolódó cikkek jobban elválnak a valódi tartalomtól, feleslegesen nagy térközök megszűntek, a túl hosszú felhasználónevek nem okoznak többé gondot, a válaszok egymásba ágyazása korrektebb, és a bővítmény kiszűr pár nem különösebben kívánatos, felugró, beugró, betüremkedő és zavaró ezt-azt is. A saját kommenteknél a név kékkel kiemelve, kicsit könnyebb így végignézni és új reagálásokat keresni alatta.
 
 Megjelenik továbbá a jobb felső sarokban két új bíborszínű gomb. Az első a kommentekhez ugrik, méghozzá ha van már az oldalon saját komment, akkor a legelsőhöz, ha nincs, akkor a kommentfolyam elejére. A második a saját hozzászólások oldalát nyitja meg. Az utóbbi továbbra is olyan, amilyen, de legalább könnyebb így elérni.
+
+A következő, újabb módosítás az automatikus bejelentkezés. A bővítmény rendszeresen ellenőrzi, hogy van-e az oldalon bejelentkezési gomb, és ha van, bejelentkezik a böngészőben eltárolt
+névvel és jelszóval (tehát a bővítménynek **nincs** tudomása a névről és jelszóról, nem kell félni) — biztonsági okokból a Bejelentkezés gombot nekünk kell megnyomni kézzel, ezt nem akartam
+teljesen automatikussá és hát mögöttivé tenni. A Mandiner ezek után jellemzően rossz oldalra irányít át, 404-es hiba, a bővítmény ezt is kezeli és automatikusan továbbmegy a helyes oldalra.
+
+Ha ismételten újra és újra bejelentkezik, akkor általában segít, ha a bejelentkezős oldalon megállva Ctrl+F5-tel (nem sima F5, Ctrl+R vagy az újratöltős gomb a címsor mellett) frissítjük az oldalt,
+ilyenkor gyarkan  a következő bejelentkezés már sikeres lesz. Persze, a hiba a Mandinerben van, nem bennünk, úgyhogy garancia semmire nincsen. Többször az is segít, ha nem tartunk túl sok mandineres
+oldalt egyszerre megnyitva, és főleg nem ugyanazt a cikket két fülön.
 
 ## Telepítés
 
