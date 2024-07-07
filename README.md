@@ -34,6 +34,20 @@ A korábbival ellentétben ez nem GreaseMonkey, hanem egy teljesen önálló bö
 
 Úgyhogy, most csak az próbálja ki, akinek a fejlesztői módban telepítés nem okoz gondot. *Bővítmények kezelése* a böngészőben, *Fejlesztői mód* bekapcsolva, a kódot akárhova letölteni, kicsomagolni, onnan telepíteni.
 
+### Részletes lépések
+
+* https://github.com/T-Peter2/mandy_unfolded -- Már itt vagyunk.
+
+* Zöld Code gomb, alatta a menü végén Download ZIP.
+
+* Letöltött fájlra rábökve Chrome kinyitja az arcchívumot, belsejében van egy *mandy_unfolded-main* mappa. Azt a mappát bárhova kimásolni. Lehet az Asztalra is, de igazából nagyon azt javasolnám, hogy ne oda, ott nem illik semmit tartósan tárolni. Mondjuk, Dokumentumok közé. (Alternatíva haladóknak: letöltött ZIP fájlt bárhova kicsomagolni).
+
+* Chrome jobb felső sarkában hárompontos menü, menü közepetájt *Bővítmények > Bővítmények kezelése*.
+
+* Ennek is jobb felső sarkában: *Fejlesztői mód* bekapcsolása. Erre megjelenik felül három kék gomb, első *Kicsomagolt telepítése* (vagy valami hasonló magyarul). Megkeresed az előbbi mappát (Asztal vagy Dokumentumok), ráböksz, megnyitod, már telepítve is van. *Fejlesztői módot* vissza is lehet kapcsolni, általában nem szükséges.
+
+### Használat
+
 A bővítménynek szokásos módon van *Beállítások* ablaka az ikonon megjelenő menüben, ott lehet a letiltásokat kezelni. Ha be van pipálva, hogy egyáltalán szükséges (alapállapotban igen), akkor megjelennek a piros X-ek a hozzászólások mellett, egyébként nem. A letiltottak listája is itt jelenik meg, egyesével visszaengedhető mindenki, vagy az egész egyben törölhető, exportálható és importálható, ahogy Triacus szkriptjéből át van emelve most. A beállítások szándékosan úgy vannak, hogy a felhasználók kezelgetése után a végén a *Mentés* gombot meg kelljen nyomni, addig nem történik meg a változások átvezetése.
 
 Itt lehet azt is beállítani, hogy csak elhalványítsa a letiltott felhasználókat, vagy ténylegesen tüntesse el. Az előbbinek van egy apró előnye: mivel így a hozzászólás továbbra is elfoglalja a helyet, nem fognak a letiltás közben ugrálni a tételek. Az eltüntetésnél viszont igen, a helyére csúsznak a mögötte levők. Kinek melyik tetszik jobban...
