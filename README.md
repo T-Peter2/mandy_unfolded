@@ -32,15 +32,11 @@ oldalt egyszerre megnyitva, és főleg nem ugyanazt a cikket két fülön.
 
 A korábbival ellentétben ez nem GreaseMonkey, hanem egy teljesen önálló böngészőbővítmény. Egyelőre nem a szokásos boltokban (Chrome Webstore), hanem itt, ami kézzel való telepítést jelent. Nincs összecsomagolva, aláírva, egyelőre nézzük meg, hogy működik, mi a vélemény a gyakorlatban, szóljon bele mindenki más is, aztán majd meglátjuk...
 
-Úgyhogy, most csak az próbálja ki, akinek a fejlesztői módban telepítés nem okoz gondot. *Bővítmények kezelése* a böngészőben, *Fejlesztői mód* bekapcsolva, a kódot akárhova letölteni, kicsomagolni, onnan telepíteni.
-
 ### Részletes lépések
 
-* https://github.com/T-Peter2/mandy_unfolded -- Már itt vagyunk.
+* Itt az oldal tetején zöld *Code* gomb, a lenyíló menüje végén *Download ZIP*.
 
-* Zöld Code gomb, alatta a menü végén Download ZIP.
-
-* Letöltött fájlra rábökve Chrome kinyitja az arcchívumot, belsejében van egy *mandy_unfolded-main* mappa. Azt a mappát bárhova kimásolni. Lehet az Asztalra is, de igazából nagyon azt javasolnám, hogy ne oda, ott nem illik semmit tartósan tárolni. Mondjuk, Dokumentumok közé. (Alternatíva haladóknak: letöltött ZIP fájlt bárhova kicsomagolni).
+* Letöltött fájlra rábökve Chrome kinyitja az archívumot, belsejében van egy *mandy_unfolded-main* mappa. Azt a mappát bárhova kimásolni. Lehet az Asztalra is, de igazából nagyon azt javasolnám, hogy ne oda, ott nem illik semmit tartósan tárolni. Mondjuk, Dokumentumok közé. (Alternatíva haladóknak: letöltött ZIP fájlt bárhova kicsomagolni).
 
 * Chrome jobb felső sarkában hárompontos menü, menü közepetájt *Bővítmények > Bővítmények kezelése*.
 
