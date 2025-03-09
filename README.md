@@ -40,23 +40,23 @@ Itt lehet azt is beállítani, hogy csak elhalványítsa a letiltott felhasznál
 
 ## Megbízhatóság
 
-Hogy ne merülhessenek fel kételyek a bővítmény megbízhatóságát illetően, a forráskódot elláttam magyarázatokkal, méghozzá bőségesen. Annyira bőségesen, hogy gyakorlatilag minden egyes sorhoz odaírtam, mit csinál. Ez programozási szempontból nyilvánvalóan teljesen felesleges, de így programozni nem vagy alig tudók is követni tudják egészen apró lépésekben, hogy mit csinál a bővítmény, és hogy egészen nyilvánvalóan, láthatóan és igazolhatóan nem csinál semmi olyasmit, ami a legkisebb kételyre adna okot a megbízhatóságát illetően. Nem gyűjt adatot, a letiltott felhasználók listáján kívül nem tárol adatot, abszolúte nem kommunikál a külvilággal, egyetlen hívás sem található benne a Mandiner kezelésétől eltérő, külső címre, sehova. Nincs benne rejtett csapda, hátsó bejárat, semmi. A böngésző garantálja, hogy kizárólag a mandiner.hu oldalon működik, és kizárólag a saját fájljait használja, semmit nem vesz igénybe a netről.
+Hogy ne merülhessenek fel kételyek a bővítmény megbízhatóságát illetően, a forráskódot elláttam magyarázatokkal, méghozzá bőségesen. Annyira bőségesen, hogy gyakorlatilag minden egyes sorhoz odaírtam, mit csinál. Ez programozási szempontból nyilvánvalóan teljesen felesleges, de így programozni nem vagy alig tudók is követni tudják egészen apró lépésekben, hogy mit csinál a bővítmény, és hogy egészen nyilvánvalóan, láthatóan és igazolhatóan nem csinál semmi olyasmit, ami a legkisebb kételyre adna okot a megbízhatóságát illetően. Nem gyűjt adatot, a letiltott felhasználók listáján kívül nem tárol adatot, abszolúte nem kommunikál a külvilággal, egyetlen hívás sem található benne a Mandiner kezelésétől eltérő, külső címre, sehova. Nincs benne rejtett csapda, hátsó bejárat, semmi. A böngésző garantálja, hogy kizárólag a _mandiner.hu_ oldalon működik, és kizárólag a saját fájljait használja, semmit nem vesz igénybe a netről.
 
 A bővítmények programozásához nem értőknek még egy segédlet, hogy mire szolgál minden egyes fájl a csomagban:
 
-* css/ads.css = a nemkívánatos felugró, beúszó, zavargó reklámok eltüntetésére szolgáló stíluslap [semmilyen futtatható programkód nincs benne]
-* css/main.css = a Mandiner oldalának kinézetét átalakító stíluslap [semmilyen futtatható programkód nincs benne]
-* icons = a Mandiner ikonja különféle méretekben, ez jelenik meg a böngésző bővítményei között
-* scripts/content.js = a fórum tényleges kezelését, a hozzászólások kibontását, az új gombok elhelyezését végző rutinok [részletes magyarázattal ellátva]
-* settings/settings.html = a Beállítások oldal stílusa és a rajta található gombok, kezelőszervek, feliratok [semmilyen futtatható programkód nincs benne]
-* settings/settings.js = a Beállítások oldal kezelését végző rutinok [részletes magyarázattal ellátva]
-* manifest.json = a bővítmény leíró adatait tartalamazó fájl:
+* `css/ads.css` = a nemkívánatos felugró, beúszó, zavargó reklámok eltüntetésére szolgáló stíluslap (semmilyen futtatható programkód nincs benne)
+* `css/main.css` = a Mandiner oldalának kinézetét átalakító stíluslap (semmilyen futtatható programkód nincs benne)
+* `icons` = a Mandiner ikonja különféle méretekben, ez jelenik meg a böngésző bővítményei között
+* `scripts/content.js` = a fórum tényleges kezelését, a hozzászólások kibontását, az új gombok elhelyezését végző rutinok (részletes magyarázattal ellátva)
+* `settings/settings.html` = a Beállítások oldal stílusa és a rajta található gombok, kezelőszervek, feliratok (semmilyen futtatható programkód nincs benne)
+* `settings/settings.js` = a Beállítások oldal kezelését végző rutinok (részletes magyarázattal ellátva)
+* `manifest.json` = a bővítmény leíró adatait tartalamazó fájl:
   - név
   - verzió
   - leírás
-  - annak megjelölése, hogy csak a "mandiner.hu" oldalon érvényes, a böngésző máshol figyelembe sem veszi
+  - annak megjelölése, hogy csak a _mandiner.hu_ oldalon érvényes, a böngésző máshol figyelembe sem veszi
   - a működéshez szükséges belső fájlok megadása
   - az egyedüli engedély a letiltott felhasználók nevének böngészőben való eltárolásához szükséges
   - az ikonok felsorolása
   - biztonsági beállítás, hogy kizárólag a saját programfájljait használhatja a bővítmény, semmilyen más (netes) forrásból származót nem
-* README.md = ez a leírás
+* `README.md` = ez a leírás
