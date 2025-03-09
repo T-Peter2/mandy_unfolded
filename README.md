@@ -32,7 +32,17 @@ oldalt egyszerre megnyitva, és főleg nem ugyanazt a cikket két fülön.
 
 A korábbival ellentétben ez nem GreaseMonkey, hanem egy teljesen önálló böngészőbővítmény. Egyelőre nem a szokásos boltokban (Chrome Webstore), hanem itt, ami kézzel való telepítést jelent. Nincs összecsomagolva, aláírva, egyelőre nézzük meg, hogy működik, mi a vélemény a gyakorlatban, szóljon bele mindenki más is, aztán majd meglátjuk...
 
-Úgyhogy, most csak az próbálja ki, akinek a fejlesztői módban telepítés nem okoz gondot. *Bővítmények kezelése* a böngészőben, *Fejlesztői mód* bekapcsolva, a kódot akárhova letölteni, kicsomagolni, onnan telepíteni.
+### Részletes lépések
+ 
+* Itt az oldal tetején zöld *Code* gomb, a lenyíló menüje végén *Download ZIP*.
+ 
+* Letöltött fájlra rábökve Chrome kinyitja az archívumot, belsejében van egy *mandy_unfolded-main* mappa. Azt a mappát bárhova kimásolni. Lehet az Asztalra is, de igazából nagyon azt javasolnám, hogy ne oda, ott nem illik semmit tartósan tárolni. Mondjuk, Dokumentumok közé. (Alternatíva haladóknak: letöltött ZIP fájlt bárhova kicsomagolni).
+ 
+* Chrome jobb felső sarkában hárompontos menü, menü közepetájt *Bővítmények > Bővítmények kezelése*.
+ 
+* Ennek is jobb felső sarkában: *Fejlesztői mód* bekapcsolása. Erre megjelenik felül három kék gomb, első *Kicsomagolt telepítése* (vagy valami hasonló magyarul). Megkeresed az előbbi mappát (Asztal vagy Dokumentumok), ráböksz, megnyitod, már telepítve is van. *Fejlesztői módot* vissza is lehet kapcsolni, általában nem szükséges.
+
+### Használat
 
 A bővítménynek szokásos módon van *Beállítások* ablaka az ikonon megjelenő menüben, ott lehet a letiltásokat kezelni. Ha be van pipálva, hogy egyáltalán szükséges (alapállapotban igen), akkor megjelennek a piros X-ek a hozzászólások mellett, egyébként nem. A letiltottak listája is itt jelenik meg, egyesével visszaengedhető mindenki, vagy az egész egyben törölhető, exportálható és importálható, ahogy Triacus szkriptjéből át van emelve most. A beállítások szándékosan úgy vannak, hogy a felhasználók kezelgetése után a végén a *Mentés* gombot meg kelljen nyomni, addig nem történik meg a változások átvezetése.
 
