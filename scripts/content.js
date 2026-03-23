@@ -26,11 +26,13 @@ function unfoldReplies() {
 
 // További kozzászólások betöltése
 function loadMore() {
-  // Minden elsődleges gomb
-  var findLoadMore = document.querySelectorAll('button.btn-primary');
+  // Az összes még eddig fel nem dolgozott elsődleges gomb
+  var findLoadMore = document.querySelectorAll('button.btn-primary:not(.mandy-unfolded-processed)');
   for (let button of findLoadMore) {
     // Ha ez egy "Továbbiak betöltése" gomb, ...
     if (button.innerText === 'Továbbiak betöltése') {
+      // jelezzük a gombon, hogy már feldolgoztuk, hogy legközelebb már ne nyomjuk meg újból
+      button.classList.add('mandy-unfolded-processed');
       // ...megnyomjuk
       button.click();
     }
@@ -47,7 +49,7 @@ function hideAllDisabledUsers() {
     // Jelezzük a hozzászóláson, hogy már feldolgoztuk, hogy legközelebb már ne tegyük meg újból
     comment.classList.add('mandy-unfolded-processed');
     // A hozzászóló neve
-    var findName = comment.querySelector('div.comment-card-name');
+    var findName = comment.querySelector('div.comment-card-name a');
     var name = findName.childNodes[0].textContent.trim();
     // Ha megegyezik a saját nevünkkel, akkor a mi hozzászólásunk
     if (name === ownName) {
