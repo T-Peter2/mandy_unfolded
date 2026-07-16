@@ -2,6 +2,9 @@
   mandiner-man-weekly-newspaper,
   kesma-advertisement-adocean,
   kesma-branding-box-ex,
+  app-strossle-advert,
+  app-article-break-news,
+  .ads-footer-banner,
   .free-display-inventory-wrapper,
   .newsletter-diverter-card-article,
   .newsletter-diverter-card-layout,
@@ -11,5 +14,9 @@
   .facebook-popup,
   .exit-popup,
   .recommendation-block-external {
+    display: none !important;
+  }
+
+  div[class^='harzs'] {
     display: none !important;
   }
